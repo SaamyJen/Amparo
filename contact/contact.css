@@ -1,0 +1,82 @@
+
+.card-container {
+  max-width: 900px;
+  margin: 3rem auto;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 3rem;
+}
+
+.card-container section {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 0.8rem;
+  padding: 1.3rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+.card-container h2 {
+  margin-bottom: 0.8rem;
+  color: #461220;
+  font-size: 1.3rem;
+}
+
+.card-container p,
+.card-container li {
+  margin-bottom: 0.5rem;
+  line-height: 1.4;
+  font-size: 0.95rem;
+  color: #481d28;
+}
+
+.card-container a {
+  color: #960320;
+  text-decoration: underline;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 600px) {
+  .card-container {
+    grid-template-columns: 1fr;
+    padding: 0.8rem;
+  }
+
+  .card-container section {
+    padding: 1rem;
+  }
+}
+
+
+.pdf-download {
+  background-color: var(--color-gray-200);
+  padding: 1.5rem 1rem;
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 0.95rem;
+}
+
+.pdf-download p {
+  margin: 0;
+  color: #461220;
+  line-height: 1.5;
+}
+
+.btn-download {
+  color: #960320;
+  text-decoration: underline;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.btn-download:hover {
+  color: #7a021b;
+}
+
+
+@media (max-width: 600px) {
+  .pdf-download {
+    padding: 1.2rem 0.8rem;
+    font-size: 0.9rem;
+  }
+}
